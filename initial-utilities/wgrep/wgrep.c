@@ -3,8 +3,8 @@
 #include <string.h>
 
 int main(int count, char** argv){
-	if(count <=1||count>3){
-		printf("wgrep: Error, args should be 2 or 3 only\n");
+	if(count <=1){
+		printf("wgrep: Error, args should be more than 2\n");
 		exit(1);
 	}
 	char* term = argv[1];
